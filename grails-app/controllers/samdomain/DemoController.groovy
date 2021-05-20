@@ -11,6 +11,6 @@ class DemoController {
     }
 
     def update() {
-        render "Updated values: ${params.t2Values}"
+        render "Updated values: ${params.t1Values}"
     }
 }

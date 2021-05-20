@@ -8,9 +8,16 @@
 <body>
 
 <g:form action="update" method="POST">
+    <table>
+
+
     <g:each var="d2" in="${domainInstance.tests}">
-        <g:textField name="t2Values" value="${d2.t2}"/>
+        <tr>
+            <td>${d2.t2}</td>
+            <td><g:textField name="t1Values" value="${d2.t1}"/></td>
+        </tr>
     </g:each>
+    </table>
     <g:submitButton name="Update"/>
 </g:form>
 </body>
